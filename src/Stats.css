@@ -1,0 +1,99 @@
+/* CONTAINERS */
+.stats-container {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    height: min(28dvw + 12px, 190px);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  
+  
+  
+  /* TIMER */
+  .timer-circle {
+    position: relative;
+    width: 21.12dvw;
+    height: 21.12dvw;
+    max-width: 132px;
+    max-height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0f2fe;
+    border-radius: 50%;
+    margin: 0 min(4dvw, 16px);
+    margin-left: min(2dvw, 8px);
+  }
+  
+  .timer-ring {
+    position: absolute;
+    width: 105%;
+    height: 105%;
+    transform: rotate(-90deg);
+  }
+  
+  .timer-ring-background {
+    fill: none;
+    stroke: #0e8498;
+    stroke-width: 6;
+  }
+  
+  .timer-ring-progress {
+    fill: none;
+    stroke: #12afdb;
+    stroke-width: 6;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s linear;
+  }
+  
+  .timer-text {
+    font-size: min(5.2dvw, 32px);
+    font-weight: bold;
+    color: #0c4a6e;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
+  /* STAT BOX */
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: min(2dvw, 10px);
+    margin: 0 min(2dvw, 16px);
+    margin-top: 7px;
+  }
+  
+  .stat-box {
+    width: 16dvw;
+    height: 16vw;
+    max-width: 100px;
+    max-height: 100px;
+    background-color: #e0f2fe;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .stat-number {
+    font-size: min(5dvw, 28px);
+    font-weight: bold;
+    color: #0c4a6e;
+  }
+  
+  .stat-label {
+    font-size: min(2.5dvw, 16px);
+    color: #64748b;
+    margin: 0;
+    text-align: center;
+  }
+  

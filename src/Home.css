@@ -1,0 +1,173 @@
+/* HEADERS */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: min(9dvh, 80px) 20px;
+    padding-bottom: 0;
+  }
+  
+  .main-header {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  .sub-header {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #34495e;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  
+  
+  
+  
+  /* DROPDOWNS */
+  .dropdowns-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .dropdown-wrapper {
+    position: relative;
+    min-width: 200px;
+  }
+  
+  .dropdown-container {
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .dropdown-text {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    font-weight: 500;
+    user-select: none;
+  }
+  
+  .dropdown-arrow {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    user-select: none;
+  }
+  
+  /* Dropdown Effects */
+  .dropdown-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .dropdown-arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  /* Dropdown Options */
+  .dropdown-options {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    z-index: 10;
+    animation: slideDown 0.3s ease;
+  }
+  
+  .dropdown-option {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    color: #2c3e50;
+    font-size: 1rem;
+    user-select: none;
+  }
+  
+  /* Dropdown Options Effects */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .dropdown-option:hover {
+    background-color: #ecf0f1;
+  }
+  
+  
+  
+  
+  
+  /* START BUTTON */
+  .start-button {
+    background: linear-gradient(135deg, #326097 0%, #191d4f 100%);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    user-select: none;
+  }
+  
+  .start-button:hover {
+    background: linear-gradient(135deg, #4377b7 0%, #272d71 100%);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+  
+  .start-button:active {
+    transform: translateY(0);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  
+  
+  
+  /* MEDIAS */
+  @media (max-width: 600px) {
+    .main-header {
+      font-size: 2rem;
+    }
+  
+    .sub-header {
+      font-size: 1.2rem;
+    }
+  
+    .dropdowns-container {
+      flex-direction: column;
+      width: 100%;
+      max-width: 300px;
+    }
+  
+    .dropdown-wrapper {
+      width: 100%;
+    }
+  }
