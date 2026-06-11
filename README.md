@@ -4,7 +4,7 @@ Built with React and Vite. HTML, CSS, and JavaScript are included.
 
 ## Quick View
 
-[View Typing Speed Test On Vercel](https://docs.github.com)
+[View Typing Speed Test On Vercel](https://typing-speed-test-roan-six.vercel.app)
 
 ## Features
 
