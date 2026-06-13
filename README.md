@@ -24,7 +24,7 @@ Built with React and Vite. HTML, CSS, and JavaScript are included.
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Portfolio
+   cd Typing-Speed-Test
    ```
 3. Install dependencies:
    ```bash
